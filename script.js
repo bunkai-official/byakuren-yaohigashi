@@ -9,7 +9,11 @@
     toggle.setAttribute('aria-label', nav.hidden ? 'メニューを開く' : 'メニューを閉じる');
   });
   nav.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(); });
+  document.addEventListener('click', event => {
+    if (!nav.hidden && !event.target.closest('.site-header')) closeMenu();
+  });
   document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
+  window.addEventListener('resize', closeMenu, {passive: true});
   const dialog = document.querySelector('#detail-dialog');
   const title = document.querySelector('#dialog-title');
   const body = document.querySelector('#dialog-body');

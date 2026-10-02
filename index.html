@@ -4,11 +4,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="白蓮会館 八尾東支部。強く、やさしく、まっすぐに。年少クラス・一般クラス・女子・壮年クラスの体験予約を受け付けています。">
+  <meta name="theme-color" content="#cde4ae">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="白蓮会館 八尾東支部">
+  <meta property="og:title" content="白蓮会館 八尾東支部">
+  <meta property="og:description" content="強く、やさしく、まっすぐに。空手の稽古を通して、礼儀・集中力・思いやりを育てます。">
+  <meta property="og:url" content="https://byakuren-yaohigashi.netlify.app/">
+  <meta property="og:image" content="https://byakuren-yaohigashi.netlify.app/assets/design-source.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://byakuren-yaohigashi.netlify.app/">
   <title>白蓮会館 八尾東支部</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">本文へ移動</a>
 <div class="page">
   <header class="site-header">
     <a class="brand" href="#top">白蓮会館<small>八尾東支部</small></a>
@@ -18,7 +29,8 @@
       <a href="#news">お知らせ</a><a href="#philosophy">理念</a><a href="#about">空手とは</a><a href="#classes">クラス</a><a href="#staff">スタッフ</a><a href="#schedule">スケジュール</a><a href="#price">料金</a><a href="#faq">よくある質問</a><a href="#contact">お問い合わせ</a>
     </nav>
   </header>
-  <main id="top">
+  <main id="main-content">
+    <span id="top" class="anchor-target" aria-hidden="true"></span>
     <section class="hero" aria-labelledby="hero-title">
       <h1 id="hero-title" class="hero-art"><span class="sr-only">強く、やさしく、まっすぐに。</span><img src="assets/design-source.jpg" alt="空手の稽古に励む少年" width="270" height="4096"></h1>
       <p class="hero-lead">体力だけでなく、<br>あいさつ・礼儀・集中力を。</p>
@@ -107,7 +119,7 @@
         <label for="date">体験希望日</label><input id="date" name="date" type="text" inputmode="numeric" aria-describedby="date-hint" required><span id="date-hint" class="sr-only">年月日を入力してください</span>
         <label for="message">その他</label><textarea id="message" name="message" rows="5"></textarea>
         <p id="form-status" role="status" hidden></p>
-        <button class="button orange submit" type="submit" aria-label="体験予約のお問い合わせ内容を確認">行事予定 <span aria-hidden="true">→</span></button>
+        <button class="button orange submit" type="submit" aria-label="体験予約のお問い合わせ内容を確認">確認する <span aria-hidden="true">→</span></button>
       </form>
     </section>
   </main>

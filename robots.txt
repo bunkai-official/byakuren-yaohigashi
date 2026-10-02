@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://byakuren-yaohigashi.netlify.app/sitemap.xml
